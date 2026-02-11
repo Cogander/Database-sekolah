@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Database Sekolah</title>
+    <meta charset="UTF-8">
+</head>
+<body style="font-family: Arial; text-align:center; background:#f2f2f2;">
+
+<h1>DATABASE SEKOLAH DIGITAL</h1>
+
+<h2>Login Admin</h2>
+
+<input type="password" id="password" placeholder="Masukkan Password">
+<br><br>
+<button onclick="login()">Login</button>
+
+<div id="dashboard" style="display:none; margin-top:30px;">
+    <h2>Dashboard</h2>
+    <p>Total Siswa: 653</p>
+    <p>Total Guru: 108</p>
+    <p>Total Pengurus: 78</p>
+    <p>Total Keseluruhan: 839</p>
+</div>
+
+<script>
+function login() {
+    var pass = document.getElementById("password").value;
+    if(pass === "k@mb0j@PLG351") {
+        document.getElementById("dashboard").style.display = "block";
+        alert("Login Berhasil!");
+    } else {
+        alert("Password Salah!");
+    }
+}
+</script>
+
+</body>
+</html>
